@@ -1,0 +1,131 @@
+
+/*********Configuração das variaveis de cor************/
+:root{
+    --vermelho:#e50914;
+    --preto:#141414;
+}
+/*********Configuração das variaveis de cor************/
+
+/***********Configuração padrão geral**********************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--preto);
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration-style: white;
+
+}
+/***********Configuração padrão geral**********************/
+
+.area{
+    width: auto;
+    margin: 20px;
+    color: white;
+}
+
+.menu{
+    float: right;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.contanier{
+    background: var(--preto);
+    height: 75px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.logo{
+    float: left;
+    color: var(--vermelho);
+    font-family: 'arial black', times;
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+a:hover{
+    color: #fff;
+}
+
+a:active{
+    color: yellowgreen;
+}
+
+/*********area do filme principal em cartaz************/
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(/img/capa-house.jpg);
+    height: 520px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: auto;
+    top: 0;
+}
+
+
+.descricao{
+    text-align: justify;
+    margin-bottom: 40px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.titulo{
+    font-size: 40px;
+    margin: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botoes{
+
+}
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: .3s ease all;
+
+}
+.botao:hover{
+    background: white;
+    color: var(--preto);
+}
+i{
+    margin: 10px;
+}
+
+/*********configuração das imagens************/
+
+.box-filme{
+    height: 80%;
+    width: 80%;
+    display: block ;
+}
+
+.carrosel-filmes{
+    margin-top: 10px;
+}
